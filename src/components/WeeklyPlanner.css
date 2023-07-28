@@ -1,10 +1,14 @@
 .weekly-planner {
   /* Add styles for the container div if needed */
+  display: grid;
+  /*grid-template-columns: 100px 1fr; /* 100px for the days column, 1fr for the tasks column */
+  grid-template-rows: 50px 1fr;
+  gap: 20px; /* Add spacing between columns */
 }
 
 .days-container {
   display: flex;
-  justify-content: space-between; /* Distribute days horizontally with equal space between them */
+  flex-direction: column;
 }
 
 .day {
@@ -13,7 +17,7 @@
   border-radius: 4px;
   padding: 4px;
   text-align: center;
-  width: 100px;
+  margin-bottom: 10px; /* Add spacing between days */
 }
 
 .day.selected {
@@ -26,8 +30,7 @@
 }
 
 .day-tasks {
-  display: flex; /* Arrange days horizontally within the task section */
-  align-items: center; /* Center days vertically */
-  justify-content: space-between; /* Distribute days horizontally with equal space between them */
+  display: flex;
+  justify-content: space-between;
   padding: 4px;
 }
