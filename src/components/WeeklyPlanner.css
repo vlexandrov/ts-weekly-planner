@@ -1,0 +1,33 @@
+.weekly-planner {
+  /* Add styles for the container div if needed */
+}
+
+.days-container {
+  display: flex;
+  justify-content: space-between; /* Distribute days horizontally with equal space between them */
+}
+
+.day {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+  width: 100px;
+}
+
+.day.selected {
+  border: 2px solid #007bff;
+}
+
+.tasks-section {
+  display: flex;
+  flex-direction: column; /* Arrange tasks vertically */
+}
+
+.day-tasks {
+  display: flex; /* Arrange days horizontally within the task section */
+  align-items: center; /* Center days vertically */
+  justify-content: space-between; /* Distribute days horizontally with equal space between them */
+  padding: 4px;
+}
